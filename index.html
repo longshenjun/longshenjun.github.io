@@ -465,7 +465,14 @@
       
         
           
-            <p><img src="/img/头像.jpg" alt=""></p>
+            <p>1、Spotlight搜索“终端”，打开[终端]程序</p>
+<p>2、输入如下代码并回车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo find / -name &quot;.DS_Store&quot; -depth -exec rm &#123;&#125; \;</span><br></pre></td></tr></table></figure>
+<p>3、如果提示你需要管理员密码，输入确认即可。命令行中输入的时候是不可见的，别输错了</p>
+<p>4、进程会自动找到所有.DS_Store文件并删除它们</p>
+<p>不过以后系统还是会创建新的.DS_Store 文件，如果需要禁止系统创建，那么可以在终端中运行如下代码并回车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.desktopservices DSDontWriteNetworkStores true</span><br></pre></td></tr></table></figure>
+<p>这样当前账户下就不会再创建新的.DS_Store 文件了。</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66"></iframe>
 
 <p>Idina Menze和Caleb Hyles激情对唱Let It Go：</p>
